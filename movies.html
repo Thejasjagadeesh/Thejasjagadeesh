@@ -1,0 +1,21 @@
+<h2>Available Movies</h2>
+
+{% for movie in movies %}
+
+<div style="border:1px solid gray;padding:15px;margin:15px;width:300px">
+
+<img src="{{movie.image}}" width="200">
+
+<h3>{{movie.name}}</h3>
+
+<p>Location: {{movie.location}}</p>
+
+<p>Ticket Price: ₹{{movie.price}}</p>
+
+<a href="/book/{{movie.name}}">
+<button>Book Ticket</button>
+</a>
+
+</div>
+
+{% endfor %}

@@ -1,0 +1,1 @@
+# Placeholder for AWS SNS email notification

@@ -1,0 +1,21 @@
+<h2>Book Ticket</h2>
+
+<p>Movie: {{movie}}</p>
+
+<form action="/confirm" method="POST">
+
+<input type="hidden" name="movie" value="{{movie}}">
+
+Seat:
+<select name="seat">
+<option>A1</option>
+<option>A2</option>
+<option>B1</option>
+<option>B2</option>
+</select>
+
+<br><br>
+
+<button type="submit">Confirm Booking</button>
+
+</form>
